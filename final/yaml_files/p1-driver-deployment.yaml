@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: p1-driver
+  labels:
+    app: p1-driver
+spec:
+  selector:
+     matchLabels:
+       app: p1-driver
+  replicas: 2
+  minReadySeconds: 15
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: 
+      maxUnavailable: 1
+      maxSurge: 1 
+  template:
+    metadata:
+      labels:
+        app: p1-driver
+    spec:
+      containers:
+        - image: parachute0719/driver:18.0
+          imagePullPolicy: Always
+          name: p1-driver
+          env:
+            - name: HADOOP
+              value: "http://namenode-l24ms"
+            - name: SPARK
+              value: "http://spark-zgm67"
+            - name: JUPYTER
+              value: "http://jupyter-p7cm4"
+            - name: SONARQUBE
+              value: "http://sonarqube-chf5c"
+          ports:
+            - containerPort: 8080
+            - containerPort: 81
+            - containerPort: 82
+            - containerPort: 83
+            - containerPort: 84
