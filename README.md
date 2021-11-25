@@ -22,7 +22,7 @@ For every container application, here is the routine for deployment.(used datano
 a) pull the image from docker hub: `docker pull bde2020/hadoop-datanode`<br>
 b) tag the image: `docker tag bde2020/hadoop-datanode gcr.io/planar-berm-327519/xuan/hadoop-datanode:1.0`<br>
 c) push the image to the container registry: `docker push gcr.io/planar-berm-327519/xuan/hadoop-datanode:1.0`<br>
-d) deploy the k8s pods(set environment varaibles, modify yaml files for replica numbers, set pre-conditions in ymal files)<br>
+d) deploy the k8s pods(set environment varaibles, modify yaml files for replica numbers, set pre-conditions in yaml files)<br>
 e) deploy the service by exposing the pods with ports mapping<br>
 
 check again for the Hadoop:<br>
