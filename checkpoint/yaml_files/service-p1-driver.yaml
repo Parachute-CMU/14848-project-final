@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: p1-driver
+spec:
+  type: LoadBalancer
+  externalIPs:
+  - 192.168.0.10
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 7777
+  selector:
+    app: p1-driver

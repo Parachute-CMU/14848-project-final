@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: p1-jupyter
+  labels:
+    app: p1-jupyter
+spec:
+  selector:
+     matchLabels:
+       app: p1-jupyter
+  replicas: 2
+  minReadySeconds: 15
+  strategy:
+    type: RollingUpdate
+    rollingUpdate: 
+      maxUnavailable: 1
+      maxSurge: 1 
+  template:
+    metadata:
+      labels:
+        app: p1-jupyter
+    spec:
+      containers:
+        - image: jupyter/scipy-notebook:latest
+        # - image: jupyter/scipy-notebook:notebook-6.4.5
+          imagePullPolicy: Always
+          name: p1-jupyter
+          ports:
+            - containerPort: 8888

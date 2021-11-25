@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: p1-sonarqube
+spec:
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 9000
+  selector:
+    app: p1-sonarqube
