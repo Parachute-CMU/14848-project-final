@@ -9,6 +9,9 @@ datanode: https://hub.docker.com/r/bde2020/hadoop-datanode<br>
 4. Sonarqube: https://hub.docker.com/_/sonarqube
 5. Driver: https://hub.docker.com/r/parachute0719/driver
 
+## Video demonstrating
+[this is the video link :)](https://youtu.be/y-xqMuPL0RY)
+
 ## Part One
 ### Containerization in GCP
 I firstly depployed the four applications containers in GCP. Specifically, **I deployed 1 namenode and 2 datanodes**.
