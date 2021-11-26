@@ -31,7 +31,7 @@ check again for the Hadoop:<br>
 2 datanodes:
 ![](https://github.com/Parachute-CMU/14848-project-final/blob/master/final/screenshots/step1/2%20datanodes.png)
 
-### Part Two
+## Part Two
 ### Build driver to connect the 4 applications
 source code for my driver:(network programming in golang is concise :)
 ```golang
