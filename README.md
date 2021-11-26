@@ -126,7 +126,7 @@ exposing the dricver
 ![](https://github.com/Parachute-CMU/14848-project-final/blob/master/final/screenshots/step2/how%20to%20expose%20driver.png)
 after exposing, driver has 5 exposed ports
 ![](https://github.com/Parachute-CMU/14848-project-final/blob/master/final/screenshots/step2/driver.png)
-### Results
+## Results
 1 loadbalancer
 ![](https://github.com/Parachute-CMU/14848-project-final/blob/master/final/screenshots/step2/1%20load%20balancer.png)
 the main page (at port 79/hello)
