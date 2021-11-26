@@ -1,6 +1,6 @@
 # 14848-Project Option 1-Final
 
-## Contianer URLs
+## Container URLs
 1. HADOOP: <br>
 namenode: https://hub.docker.com/r/bde2020/hadoop-namenode<br>
 datanode: https://hub.docker.com/r/bde2020/hadoop-datanode<br>
